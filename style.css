@@ -1,0 +1,21 @@
+/* Med pseudo-klassen :root kan man deklarera
+variabler med ett globalt scope, alltså att de
+går att använda i alla CSS-regler. */
+
+:root {
+  /* Variabler namnges med två mindestreck i början av namnet. */
+  --background-color-gray: #333;
+  --primary-color: orange;
+  --secondary-color: green;
+  --default-margin: 1em;
+}
+
+body {
+  /* För att hämta värdet av en variabel används funktionen var().*/
+  background-color: var(--background-color-gray);
+}
+
+h1 {
+  margin: var(--default-margin);
+  color: var(--primary-color);
+}
