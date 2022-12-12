@@ -19,3 +19,11 @@ h1 {
   margin: var(--default-margin);
   color: var(--primary-color);
 }
+
+/*Man kan sätta om värdet på variabler i media queries.*/
+@media screen and (max-width: 780px) {
+  /*Här sätts lite mindre marginal på mindre skärmar.*/
+  :root {
+    --default-margin: 0.5em;
+  }
+}
