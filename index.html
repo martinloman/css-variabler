@@ -9,5 +9,16 @@
   </head>
   <body>
     <h1>Demo</h1>
+    <div class="with-background">
+      Den här div:en har bakgrunden som är i variabeln
+      <code>--a-background-color</code>
+    </div>
+    <div class="sets-background-variable-red">
+      <div class="with-background">
+        Den här div:en har <em>också</em> bakgrunden som är i variabeln
+        <code>--a-background-color</code>, men dess parent har satt om värdet på
+        variabeln.
+      </div>
+    </div>
   </body>
 </html>

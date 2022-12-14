@@ -6,7 +6,7 @@ går att använda i alla CSS-regler. */
   /* Variabler namnges med två bindestreck i början av namnet. */
   --background-color-gray: #333;
   --primary-color: orange;
-  --secondary-color: green;
+  --a-background-color: green;
   --default-margin: 1em;
 }
 
@@ -18,6 +18,16 @@ body {
 h1 {
   margin: var(--default-margin);
   color: var(--primary-color);
+}
+
+.with-background {
+  width: 50%;
+  height: 300px;
+  background-color: var(--a-background-color);
+}
+
+.sets-background-variable-red {
+  --a-background-color: rgb(229, 38, 38);
 }
 
 /*Man kan sätta om värdet på variabler i media queries.*/
